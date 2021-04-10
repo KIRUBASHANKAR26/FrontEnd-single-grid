@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+}
+main{
+    min-height: 100vh;
+    padding: 5em 2em;
+
+}
+.top-div{
+    background: #fff;
+    padding: 7%;
+    border-radius: .4em .4em 0 0;
+}
+h2{
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    color: #fff;
+    width: 100%;
+}
+.top-div > h2{
+    color: hsl(179, 62%, 43%);
+}
+.top-div :nth-child(2){
+    color:  hsl(71, 73%, 54%);
+    font-weight: 600;
+    margin-bottom: 1em;
+    width: 100%;
+}
+.top-div :nth-child(3){
+    color: hsl(218, 22%, 67%);
+    line-height: 2;
+    font-size: .8em;
+}
+.left-div{
+    background-color: hsl(179, 62%, 43%);
+    padding: 7%;
+    color: #fff;
+}
+.left-div h2{
+    font-size: 1rem;
+    opacity: 70%;
+}
+.left-div :nth-child(2){
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+.left-div span{
+    opacity: 50%;
+    font-size:1rem;
+}
+.left-div :nth-child(3){
+    font-size: 1em;
+    margin-bottom: 1rem;
+    opacity: 70%;
+}
+.right-div{
+    background-color: hsl(179, 62%, 43%);
+    opacity: 70%;
+    padding: 7%;
+    color: #fff;
+    border-radius: 0 0 .4em .4em;
+}
+.right-div h2{
+    font-size: 1rem;
+    opacity: 70%;
+}
+.left-div button{
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.right-div p{
+    text-align: left;
+    font-size: .8em;
+    line-height: 1.5;
+    opacity: 70%;
+}
+
+@media screen and (min-width:40rem) {
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 42rem;
+
+    }
+    .top-div{
+        padding: 3rem;
+        flex: 100%;
+    }
+    .left-div{
+        padding: 3rem;
+        flex: 50%;
+        border-bottom-left-radius: 6px;
+    }
+    .right-div{
+        padding: 3rem;
+        flex: 50%;
+        border-bottom-left-radius: 0;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .top-div :nth-child(2){
+        font-size: 1em;
+    }
+    .top-div :nth-child(3){
+        font-size: 1em;
+    }   
+}
